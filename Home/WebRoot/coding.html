@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="favicon.ico">
+		<title>coding</title>
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/animate.css" rel="stylesheet">
+		<script src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	</head>
+
+	<body>
+<style>
+	body,html{
+		overflow: hidden;
+	}
+</style>
+		<div class="nav">
+			<div class="nav-con">
+				<label><span>代码托管, 开启云端</span></label>
+				<a class="on">首页 <em></em></a><span>|</span>
+				<a>代码托管 <em></em></a><span>|</span>
+				<a>开启云端 <em></em></a><span>|</span>
+				<a href="login.html">立即登录 <em></em></a><span>|</span>
+				<a href="register.html">快速注册 <em></em></a>
+			</div>
+		</div>
+		<div id="index">
+			<div class="section section1">
+				<div class="banner"></div>
+			</div>
+			<div class="section section2"></div>
+			<div class="section section3"></div>
+			<div class="section section4">
+					<div class="foot poa ">
+						<div class="foot-con">
+							<dl class="fl">
+								<dd><a href="javascript:;">了解更多</a></dd>
+								<dd><a href="javascript:;">代码托管</a></dd>
+								<dd><a href="javascript:;">项目管理</a></dd>
+								<dd><a href="javascript:;">WebIDE</a></dd>
+							</dl>
+							<dl class="fl">
+								<dd><a href="javascript:;">了解更多</a></dd>
+								<dd><a href="javascript:;">代码托管</a></dd>
+								<dd><a href="javascript:;">项目管理</a></dd>					
+								<dd><a href="javascript:;">WebIDE</a></dd>			
+							</dl>
+							<dl class="fl">
+								<dd><a href="javascript:;">帮助中心</a></dd>
+								<dd><a href="javascript:;">服务状态</a></dd>
+								<dd><a href="javascript:;">在线反馈</a></dd>
+								<dd><a href="javascript:;">联系我们</a></dd>
+							</dl>
+							<dl class="fl">
+								<dd><a href="javascript:;">帮助中心</a></dd>
+								<dd><a href="javascript:;">服务状态</a></dd>
+								<dd><a href="javascript:;">在线反馈</a></dd>
+								<dd><a href="javascript:;">加入我们</a></dd>
+							</dl>
+							<dl class="fl">
+								<dt><h2>400-222-3333</h2></dt>
+								<dd><p>support@coding.net</p></dd>								
+							</dl>
+						</div>
+					</div>
+			</div>
+		</div>
+		<script>
+			$(function() {
+				$('#index').fullpage({
+					'navigation': true,
+					'continuousVertical': true,
+					'afterLoad': function(anchorLink, index) {
+						switch(index) {
+							case 1:
+								$('.banner-wz').removeClass('bounceOutLeft').addClass('tada');
+								$('.banner-line').removeClass('width2').addClass('width');
+								$('.banner-wz2').removeClass('bounceOutRight').addClass('fadeInLeft');
+								$('.pro1').removeClass('fadeOutDown').addClass('fadeInLeft');
+								$('.pro2').removeClass('fadeOutDown').addClass('fadeInLeft');
+								$('.pro3').removeClass('fadeOutDown').addClass('fadeInRight');
+								$('.pro4').removeClass('fadeOutDown').addClass('fadeInRight');
+								break;
+							case 2:
+								$('.hot-pro1').removeClass('lightSpeedOut').addClass('lightSpeedIn');
+								$('.hot-pro2').removeClass('bounceOutLeft').addClass('bounceInLeft');
+								$('.hot-pro3').removeClass('lightSpeedOut').addClass('lightSpeedIn');
+								break;
+							case 3:
+								$('.pro-info1').removeClass('flipOutX').addClass('rubberBand');
+								$('.pro-info2').removeClass('slideOutDown').addClass('slideInUp');
+								break;
+							case 4:
+								$('.pro-info3').removeClass('slideOutDown').addClass('slideInDown');
+								$('.pro-info4').removeClass('slideOutRight').addClass('slideInLeft');
+								$('.pro-info5').removeClass('slideOutLeft').addClass('slideInRight');
+								$('.pro-info6').removeClass('slideOutRight').addClass('slideInLeft');		
+								$('.foot').removeClass('rollOut').addClass('rollIn');		
+								break;
+							default:
+						}
+					},
+					'onLeave': function(index, nextIndex, direction) {
+						switch(index) {
+							case 1:
+								$('.banner-wz').removeClass('tada').addClass('bounceOutLeft');
+								$('.banner-line').removeClass('width').addClass('width2');
+								$('.banner-wz2').removeClass('fadeInLeft').addClass('bounceOutRight');
+								$('.pro1').removeClass('fadeInLeft').addClass('fadeOutDown');
+								$('.pro2').removeClass('fadeInLeft').addClass('fadeOutDown');
+								$('.pro3').removeClass('fadeInRight').addClass('fadeOutDown');
+								$('.pro4').removeClass('fadeInRight').addClass('fadeOutDown');
+								break;
+							case 2:
+								$('.hot-pro1').removeClass('lightSpeedIn').addClass('lightSpeedOut');
+								$('.hot-pro2').removeClass('bounceInLeft').addClass('bounceOutLeft');
+								$('.hot-pro3').removeClass('lightSpeedIn').addClass('lightSpeedOut');
+								break;
+							case 3:
+								$('.pro-info1').removeClass('rubberBand').addClass('flipOutX');
+								$('.pro-info2').removeClass('slideInUp').addClass('slideOutDown');
+								break;
+							case 4:
+								$('.pro-info3').removeClass('slideInDown').addClass('slideOutDown');
+								$('.pro-info4').removeClass('slideInLeft').addClass('slideOutRight');
+								$('.pro-info5').removeClass('slideInRight').addClass('slideOutLeft');
+								$('.pro-info6').removeClass('slideInLeft').addClass('slideOutRight');		
+								$('.foot').removeClass('rollIn').addClass('rollOut');		
+								break;
+							default:
+						}
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>

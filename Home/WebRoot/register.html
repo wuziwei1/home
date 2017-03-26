@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>register</title>
+    <meta charset="utf-8">
+    <script src="js/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="js/register.js"></script>
+	<link rel="stylesheet" href="css/register.css" type="text/css"></link>
+ </head>
+ <body>		 
+	<div id="all">
+		<div class="nav">
+			<div class="nav-con">
+				<label><span>代码托管, 开启云端</span></label>
+				<a class="on">首页 <em></em></a><span>|</span>
+				<a>代码托管 <em></em></a><span>|</span>
+				<a>开启云端 <em></em></a><span>|</span>
+				<a class="dlu">立即登录 <em></em></a><span>|</span>
+				<a class="rg">快速注册 <em></em></a>
+			</div>
+		</div>
+		<!-- 注册 -->
+		<div id="All">
+			<div id="loginPanel">
+			    <!-- 标题 -->
+				<div id="loginTitle">
+					<div class="loginTitle1">帐号注册</div>						
+				</div>
+				<!-- 注册 -->
+				<div id="RegisterPage">
+				    <div class="line">
+						<div class="txtBorder">
+						    <input type="text" id="txtName" maxlength="20" validate="cenm_" placeholder="昵称" autocomplete="off"/>
+							<div class="placeholder">昵称</div>
+					    </div>
+						<div class="errTips"></div>
+						<div><img class="pic" src="images/pic1.png"/></div>
+					</div>
+					<div class="line">
+						<div class="txtBorder">
+					    	<input type="password" id="txtPassword" placeholder="密码" validate="enm_" minLen="6" maxlength="20" />
+							<div class="placeholder">密码</div>
+				    	</div>
+						<div class="errTips"></div>
+						<div><img class="pic" src="images/pic2.png"/></div>
+					</div>
+					<div class="line">
+						<div class="txtBorder">
+					        <input type="password" id="txtPwdConfirm" placeholder="确认密码" validate="enm_" minLen="6" maxlength="20" />
+							<div class="placeholder">确认密码</div>
+				    	</div>
+						<div class="errTips"></div>
+						<div><img class="pic" src="images/pic8.png"/></div>
+					</div>
+					<input id="btnRegist" type="button" value="立即注册"></input>
+			   </div>
+			   <p class="msg">点击“立即注册”，即表示您同意并愿意遵守哈哈<a> 用户协议 </a>和<a> 隐私政策 </a></p>			
+			</div>
+		</div>												
+		<!-- 网站底部 -->
+		<div class="copy-rights"> 
+			<a>简体</a> | 
+			<a>繁体</a> | 
+			<a>English</a> |  
+			<a>常见问题</a>  
+			<p class="nf-intro">
+				<span>哈哈公司版权所有-京ICP备11111111-
+					<span><img src="images/pic7.png" style="cursor: pointer;"></span>京公网安备11111111111111号-京ICP证111111号
+				</span>
+			</p> 
+		</div>
+	</div>	
+</body>
+</html>

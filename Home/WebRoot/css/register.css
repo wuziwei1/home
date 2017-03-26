@@ -1,0 +1,208 @@
+@CHARSET "UTF-8";
+
+html,body {
+	height: 100%;
+}
+
+body {
+    margin: 0 auto;
+}
+
+* {
+	font-family: 'Microsoft YaHei';
+}
+
+/* 顶部 */
+.nav{
+	height:40px;
+	position:fixed;
+	background:#3a3a3a;
+	width:100%;
+	top:0;
+	left:0;
+	z-index:99;
+}
+.nav-con{
+	max-width:1460px;
+	margin:0 auto;
+	text-align:right;
+	color:#fff;
+	line-height:40px;
+	font-size:14px;
+}
+.nav-con label{
+	float:left;
+}
+.nav-con em{
+	width:0;
+	display:inline-block;
+	position:absolute;
+	bottom:-6px;
+	left:0;
+	-webkit-transition:all .3s ease;
+	transition:all .3s ease;
+}
+.nav-con a{
+	color:#fff;
+	padding:0 10px;
+	position:relative;
+    cursor: pointer;
+}
+.nav-con a.rg{
+    color: #1ec3ab;
+}
+.nav-con a:hover{color:#1ec3ab}
+.nav-con a.on em,.nav-con a:hover em{width:100%;height:1px}
+.nav-con img{margin-top:10px}
+.nav-con span{padding:0 10px}
+
+
+#all{
+    width: 100%;
+	height: 100%;
+    background-color: #f5f5f5;   
+}
+
+#All{
+    width: 600px;
+    margin: 0 auto; 
+    background-color: #ffffff;	
+    position: relative;
+}
+
+#loginPanel {
+    background-color: #ffffff;
+    position: absolute;
+    top:85px;
+}
+
+/*标题*/
+.loginTitle1 {
+    font-size: 27px;
+    text-align: center;
+    padding: 30px 0 30px 0;
+    color: #7b7b7b;   
+}
+
+#RegisterPage{
+	position: relative;
+    padding: 0 110px;
+}
+
+.line{
+	position: relative;
+    padding-bottom: 15px;
+}
+
+/*文本框和密码框*/
+#txtName,#txtPassword,#txtPwdConfirm {
+    color: #525151;
+    outline: none;
+    padding: 12px 10px 12px 48px;
+    background-color: transparent;
+    font-size: 16px;
+    border: 1px solid #dadada;
+    width: 320px;
+}
+
+/*IE8兼容*/
+.placeholder {
+	color: darkgrey;
+	position: absolute;
+	top: 13px;
+	left: 50px;
+	display: none;
+	display: block\9;
+}
+
+.hidden {
+	display: none;
+}
+
+/*错误提示信息*/
+.errTips {
+    color: #d42929;
+    margin: -34px 3px 0 0;
+    font-size: 15px;
+    opacity: 0;
+    transition: all;
+    transition-duration: 250ms;
+    position: absolute;
+    right: 0;
+}
+
+/*显示错误信息*/
+.showErrTips{
+    opacity: 1;
+    right: 10px;
+}
+
+#btnRegist {
+    outline: none;
+    padding: 11px 0;
+    background-color: #616161;
+    border: 2px solid #616161;
+    color: #f5f5f5;
+    font-size: 16px;
+    margin: 25px 0 5px 0;
+    width: 380px;
+    cursor: pointer;
+}
+
+#btnRegist:hover{
+    background-color: #484848;
+    border: 2px solid #484848;
+}
+
+#btnRegist:active{
+    background-color: #484848;
+    border: 2px solid #484848;	
+}
+
+/*注册成功*/
+.btnSccuess{
+    border: 2px solid #484848!important;
+    background-color: #484848!important;
+}
+
+.pic{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+
+/* 用户协议 */
+.msg {
+    padding: 35px 0 15px 0;
+    color: #9d9d9d;
+    text-align: center;
+}
+
+.msg a {
+    color: #636363;
+}
+
+/* 网站底部 */
+.copy-rights {
+    text-align: center;
+    color: #828282;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
+}
+
+.copy-rights a {
+    color: #828282;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.nf-intro {
+    padding: 0 0 10px 0;
+}
